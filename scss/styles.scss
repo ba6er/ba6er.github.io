@@ -1,0 +1,83 @@
+@use "base";
+
+body {
+  height: 100vh;
+
+  background-color: base.$text1;
+
+  display: flex;
+  flex-direction: column;
+
+  .fit {
+    width: 100%;
+    max-width: 960px;
+    min-width: 692px;
+  }
+}
+
+header {
+  background-color: base.$back2;
+  color: base.$text2;
+
+  padding: 1em 2em;
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+
+  a {
+    color: inherit;
+  }
+
+}
+
+main {
+  flex: 100%;
+
+  background-color: base.$back1;
+  color: base.$text1;
+
+  padding: 1em 4em 4em 4em;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+
+  p {
+    margin-left: 1em;
+  }
+
+  .game-view {
+    margin-left: 2em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25em;
+
+    #fs-btn {
+      color: base.$text2;
+      background-color: base.$back2;
+
+      padding: 0.5em 1.5em;
+      border: 2px solid base.$back3;
+      border-radius: 0.25em;
+    }
+  }
+}
+
+footer {
+  background-color: base.$back3;
+  color: base.$text2;
+
+  padding: 1em 2em 4em 2em;
+  margin: auto;
+
+  a {
+    color: inherit;
+    font-weight: bold;
+  }
+}

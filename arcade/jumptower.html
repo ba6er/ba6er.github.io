@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jump Tower</title>
+    <link href="../styles.css?v=0.0.1" rel="stylesheet">
+  </head>
+  <body>
+    <header class="fit">
+      <a href="../index.html" target="_self">Index</a>
+      <a href="../arcade.html" target="_self">Arcade</a>
+      <a href="../about.html" target="_self">WHY LOBOTOMY</a>
+      <a href="../trolled.html" target="_self">GTA 7 free download</a>
+    </header>
+    <main class="fit">
+      <h1>Jump Tower</h1>
+      <div class="game-view">
+        <iframe id="game" src="https://ba6er.github.io/jumptower-web/" width="512" height="480" allow="autoplay"></iframe>
+        <button id="fs-btn" type="button">Fullscreen</button>
+      </div>
+      <p>
+        Jump Tower is a fast-paced platformer where you ascend an infinite tower.
+      </p>
+      <p>
+        The game was strongly inspired by Icy Tower, which I used to play as a kid.
+      </p>
+      <p>
+        I made this game in a few days to learn golang.
+        You can find the source code
+        <a href="https://github.com/ba6er/jumptower" target="_blank">here</a>.
+      </p>
+    </main>
+    <footer class="fit">
+      Made by
+      <a href="https://github.com/ba6er" target="_blank">Ba6er</a>
+    </footer>
+    <script>
+      const fs_btn = document.getElementById("fs-btn");
+      const game = document.getElementById("game");
+
+      fs_btn.addEventListener("click", () => {
+        game.requestFullscreen();
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+:root {
+  font: 18px "Verdana", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  height: 100vh;
+  background-color: #222233;
+  display: flex;
+  flex-direction: column;
+}
+body .fit {
+  width: 100%;
+  max-width: 960px;
+  min-width: 692px;
+}
+
+header {
+  background-color: #3366bb;
+  color: #f4f8ff;
+  padding: 1em 2em;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+header a {
+  color: inherit;
+}
+
+main {
+  flex: 100%;
+  background-color: #fdfdff;
+  color: #222233;
+  padding: 1em 4em 4em 4em;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+}
+main p {
+  margin-left: 1em;
+}
+main .game-view {
+  margin-left: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25em;
+}
+main .game-view #fs-btn {
+  color: #f4f8ff;
+  background-color: #3366bb;
+  padding: 0.5em 1.5em;
+  border: 2px solid #223355;
+  border-radius: 0.25em;
+}
+
+footer {
+  background-color: #223355;
+  color: #f4f8ff;
+  padding: 1em 2em 4em 2em;
+  margin: auto;
+}
+footer a {
+  color: inherit;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=styles.css.map */
