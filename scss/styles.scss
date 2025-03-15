@@ -1,45 +1,88 @@
-@use "base";
+$t_black: #222233;
+$t_white: #f4f8ff;
+$b_body: #223355;
+$b_main: #fdfdff;
+$b_side: #6699ee;
+$b_side_h: #4477cc;
+$b_header: #3366bb;
 
-body {
-  height: 100vh;
-
-  background-color: base.$text1;
-
-  display: flex;
-  flex-direction: column;
-
-  .fit {
-    width: 100%;
-    max-width: 960px;
-    min-width: 692px;
-  }
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  // border: 1px solid black;
 }
 
-header {
-  background-color: base.$back2;
-  color: base.$text2;
+img {
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+:root {
+  font: 18px "Verdana", sans-serif;
+}
+
+body {
+  background-color: $b_body;
+
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.header {
+  color: $t_white;
+  background-color: $b_header;
 
   padding: 1em 2em;
   margin: auto;
-
-  display: flex;
-  flex-direction: row;
-  gap: 2em;
-
-  a {
-    color: inherit;
-  }
-
 }
 
-main {
-  flex: 100%;
+.left {
+  color: $t_white;
+  background-color: $b_side;
 
-  background-color: base.$back1;
-  color: base.$text1;
+  width: 200px;
+  min-height: 400px;
+  float: left;
+  display: block;
+
+  &__nav {
+    margin: 1rem 0;
+
+    display: flex;
+    flex-direction: column;
+
+    p, a {
+      padding: 0.5rem 1rem;
+      margin: 0 1rem;
+      border-radius: 0.5rem;
+
+      text-align: center;
+    }
+
+    p, a:hover {
+      background-color: $b_side_h;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.main {
+  color: $t_black;
+  background-color: $b_main;
+
+  max-width: 1000px;
+  min-height: 400px;
 
   padding: 1em 4em 4em 4em;
-  margin: auto;
+  margin-left: 200px;
 
   display: flex;
   flex-direction: column;
@@ -50,7 +93,7 @@ main {
     margin-left: 1em;
   }
 
-  .game-view {
+  &__game {
     margin-left: 2em;
 
     display: flex;
@@ -59,25 +102,21 @@ main {
     gap: 0.25em;
 
     #fs-btn {
-      color: base.$text2;
-      background-color: base.$back2;
+      color: $t_white;
+      background-color: $b_side;
 
       padding: 0.5em 1.5em;
-      border: 2px solid base.$back3;
+      border: 2px solid $b_header;
       border-radius: 0.25em;
     }
   }
 }
 
-footer {
-  background-color: base.$back3;
-  color: base.$text2;
+.footer {
+  color: $t_white;
+  background-color: $b_header;
 
   padding: 1em 2em 4em 2em;
   margin: auto;
-
-  a {
-    color: inherit;
-    font-weight: bold;
-  }
 }
+
