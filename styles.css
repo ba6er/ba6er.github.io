@@ -5,77 +5,88 @@
   border: none;
 }
 
+a {
+  color: inherit;
+}
+
 :root {
   font: 18px "Verdana", sans-serif;
 }
 
-button {
-  cursor: pointer;
+body {
+  background-color: #223355;
+  max-width: 1200px;
+  margin: 2rem auto;
 }
 
-body {
-  height: 100vh;
-  background-color: #222233;
+.header {
+  color: #f4f8ff;
+  background-color: #3366bb;
+  padding: 1em 2em;
+  margin: auto;
+}
+
+.left {
+  color: #f4f8ff;
+  background-color: #6699ee;
+  width: 200px;
+  min-height: 400px;
+  float: left;
+  display: block;
+}
+.left__nav {
+  margin: 1rem 0;
   display: flex;
   flex-direction: column;
 }
-body .fit {
-  width: 100%;
-  max-width: 960px;
-  min-width: 692px;
+.left__nav p, .left__nav a {
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.left__nav p, .left__nav a:hover {
+  background-color: #4477cc;
+}
+.left__nav p {
+  margin-bottom: 1rem;
 }
 
-header {
-  background-color: #3366bb;
-  color: #f4f8ff;
-  padding: 1em 2em;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  gap: 2em;
-}
-header a {
-  color: inherit;
-}
-
-main {
-  flex: 100%;
-  background-color: #fdfdff;
+.main {
   color: #222233;
+  background-color: #fdfdff;
+  max-width: 1000px;
+  min-height: 400px;
   padding: 1em 4em 4em 4em;
-  margin: auto;
+  margin-left: 200px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1em;
 }
-main p {
+.main p {
   margin-left: 1em;
 }
-main .game-view {
+.main__game {
   margin-left: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.25em;
 }
-main .game-view #fs-btn {
+.main__game #fs-btn {
   color: #f4f8ff;
-  background-color: #3366bb;
+  background-color: #6699ee;
   padding: 0.5em 1.5em;
-  border: 2px solid #223355;
+  border: 2px solid #3366bb;
   border-radius: 0.25em;
 }
 
-footer {
-  background-color: #223355;
+.footer {
   color: #f4f8ff;
+  background-color: #3366bb;
   padding: 1em 2em 4em 2em;
   margin: auto;
-}
-footer a {
-  color: inherit;
-  font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map */
