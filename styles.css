@@ -5,8 +5,8 @@
   border: none;
 }
 
-a {
-  color: inherit;
+img {
+  display: block;
 }
 
 :root {
@@ -25,6 +25,9 @@ body {
   padding: 1em 2em;
   margin: auto;
 }
+.header a {
+  color: inherit;
+}
 
 .left {
   color: #f4f8ff;
@@ -40,6 +43,7 @@ body {
   flex-direction: column;
 }
 .left__nav p, .left__nav a {
+  color: inherit;
   padding: 0.5rem 1rem;
   margin: 0 1rem;
   border-radius: 0.5rem;
@@ -81,12 +85,18 @@ body {
   border: 2px solid #3366bb;
   border-radius: 0.25em;
 }
+.main #dl-btn {
+  cursor: pointer;
+}
 
 .footer {
   color: #f4f8ff;
   background-color: #3366bb;
   padding: 1em 2em 4em 2em;
   margin: auto;
+}
+.footer a {
+  color: inherit;
 }
 
 /*# sourceMappingURL=styles.css.map */
